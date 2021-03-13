@@ -1,0 +1,11 @@
+# Syntax Coloring Map For NullSerial library
+
+# Datatypes (KEYWORD1)
+NullSerial_	KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+
+# Instances (KEYWORD2)
+NullSerial	KEYWORD2
+
+# Constants (LITERAL1)
