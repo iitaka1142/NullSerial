@@ -2,7 +2,7 @@
 Serial like library which throwing away input/outupt.
 
 ## Usage
-### Include 
+### Include
 
 ```cpp
 #include <NullSerial.h>
