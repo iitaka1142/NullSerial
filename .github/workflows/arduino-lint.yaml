@@ -1,3 +1,5 @@
+name: arduno-lint-action
+
 on: [push, pull_request]
 jobs:
   lint:
