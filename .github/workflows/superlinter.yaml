@@ -1,0 +1,25 @@
+name: Super-Linter
+
+# 新しいコミットがリポジトリにプッシュされるたびにこのワークフローを実行する
+on: push
+
+jobs:
+  # ジョブキーを設定する。 ジョブ名が指定されていない場合、
+  # キーはジョブ名として表示される
+  super-lint:
+    # ジョブ名を付ける
+    name: Lint code base
+    # 実行するマシンのタイプを設定する
+    runs-on: ubuntu-latest
+
+    steps:
+      # ubuntu-latest マシンでリポジトリのコピーをチェックアウトする
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Super-Linter アクションを実行する
+      - name: Run Super-Linter
+        uses: github/super-linter@v3
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
