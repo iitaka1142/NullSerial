@@ -1,8 +1,8 @@
 # NullSerial
 Serial like library which throwing away input/outupt.
 
-# Usage
-## Include 
+## Usage
+### Include 
 
 ```cpp
 #include <NullSerial.h>
@@ -10,16 +10,16 @@ Serial like library which throwing away input/outupt.
 
 A header file will be included automatically when you use "include the library" in Arduino IDE.
 
-## Instance
+### Instance
 
 A instance **NullSerial** is defined in the library.
 
-## Initialize
+### Initialize
 
 NullSerial does not need to initialize(call .begin() member function).
 You can call it, too. begin() does not do anything.
 
-# Example
+## Example
 
 ```cpp
 #define DEBUG
@@ -42,13 +42,13 @@ You can call it, too. begin() does not do anything.
 // ...
 
 ```
-# License
+## License
 LGPLv3
 
-# References
+## References
 - [HardwareSerial.h](https://github.com/arduino/Arduino/blob/master/hardware/arduino/avr/cores/arduino/HardwareSerial.h)
 - [SoftwareSerial.h](https://github.com/arduino/Arduino/blob/master/hardware/arduino/avr/libraries/SoftwareSerial/src/SoftwareSerial.h)
 
-# ToDo
+## ToDo
 - Test using NullSerial instead of SerialUSB
 
